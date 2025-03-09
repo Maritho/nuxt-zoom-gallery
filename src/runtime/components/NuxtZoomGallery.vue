@@ -112,11 +112,11 @@ const props = defineProps({
   },
   width: {
     type: Number,
-    default: 200,
+    default: 450,
   },
   height: {
     type: Number,
-    default: 200,
+    default: 450,
   },
   zoomLevel: {
     type: Number,
@@ -124,11 +124,11 @@ const props = defineProps({
   },
   zoomWindowSize: {
     type: Number,
-    default: 2,
+    default: 1,
   },
   zoomWindowX: {
     type: Number,
-    default: 300,
+    default: 466,
   },
   zoomWindowY: {
     type: Number,
@@ -200,11 +200,11 @@ const mobileCheck = () => {
 }
 
 const zoomWidth = computed(() => {
-  return props.zoomWindowSize * 150
+  return props.zoomWindowSize * props.width
 })
 
 const zoomHeight = computed(() => {
-  return props.zoomWindowSize * 150
+  return props.zoomWindowSize * props.height
 })
 
 const mainImgStyle = computed(() => {

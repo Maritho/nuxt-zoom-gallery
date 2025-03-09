@@ -3,9 +3,6 @@
     <ClientOnly>
       <NuxtZoomGallery
         :gallery="gallery"
-        :zoom-window-x="250"
-        :width="450"
-        :height="450"
       />
     </ClientOnly>
   </div>
