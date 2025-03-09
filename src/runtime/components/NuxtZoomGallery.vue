@@ -327,7 +327,7 @@ const pointerBoxStyle = computed(() => {
       'background': 'gray',
       'opacity': 0.5,
       'border': '1px solid white',
-      'cursor': 'crosshair',
+      'cursor': 'zoom-in',
     }
   }
 })
