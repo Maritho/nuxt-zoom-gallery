@@ -8,6 +8,7 @@
       class="hero-area"
       :class="props.heroStyle"
       :style="thumbnailStyle"
+      @click="mobileShow"
       @mouseenter="mouseEnter"
       @mouseleave="mouseLeave"
       @mousemove.self="followMouse"
@@ -159,13 +160,16 @@ const toPx = (v) => {
   return v + 'px'
 }
 
+const mobileShow = () => {
+  if (mobileCheck()) {
+    data.modalMobile = true;
+  }
+}
+
 const mouseEnter = () => {
   if (!mobileCheck()) {
     data.visibleZoom = true
     updateThumbnailPos()
-  }
-  else {
-    data.modalMobile = true
   }
 }
 
