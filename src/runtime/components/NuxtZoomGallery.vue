@@ -162,7 +162,7 @@ const toPx = (v) => {
 
 const mobileShow = () => {
   if (mobileCheck()) {
-    data.modalMobile = true;
+    data.modalMobile = true
   }
 }
 
